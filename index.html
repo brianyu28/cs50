@@ -47,9 +47,19 @@
 
             <br/>
 
-            <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSedcXu630azG-kTovH7gIEV8n24Bgp6FmHq4IU1STqVzLfu6A/viewform?usp=sf_link">
+            <a class="button postsection" style="display:none;" href="https://docs.google.com/forms/d/e/1FAIpQLSedcXu630azG-kTovH7gIEV8n24Bgp6FmHq4IU1STqVzLfu6A/viewform?usp=sf_link">
                 Post-Section Form
             </a>
 
     </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let now = Date.now() / 1000;
+            if (now > 1568750400) {
+                document.querySelectorAll(".postsection").forEach(elt => {
+                    elt.style.display = "block";
+                });
+            }
+        });
+    </script>
 </html>

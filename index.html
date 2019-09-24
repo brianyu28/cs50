@@ -47,7 +47,13 @@
 
             <br/>
 
-            <a class="button postsection" style="display:none;" href="https://docs.google.com/forms/d/e/1FAIpQLSedcXu630azG-kTovH7gIEV8n24Bgp6FmHq4IU1STqVzLfu6A/viewform?usp=sf_link">
+            <a class="button" href="sorting.c">
+                Sorting Distribution Code
+            </a>
+
+            <br/>
+
+            <a class="button postsection" style="display:none;" href="https://forms.gle/nBba23d9Ee2QWT538">
                 Post-Section Form
             </a>
 
@@ -55,7 +61,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             let now = Date.now() / 1000;
-            if (now > 1568750400) {
+            // https://www.epochconverter.com
+            if (now > 1569355200) {
                 document.querySelectorAll(".postsection").forEach(elt => {
                     elt.style.display = "block";
                 });

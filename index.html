@@ -53,14 +53,19 @@
 
     </body>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        function check() {
             let now = Date.now() / 1000;
+            console.log(now);
             // https://www.epochconverter.com
             if (now > 1569960000) {
                 document.querySelectorAll(".postsection").forEach(elt => {
                     elt.style.display = "block";
                 });
             }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            check();
+            window.setInterval(check, 1000 * 60);
         });
     </script>
 </html>

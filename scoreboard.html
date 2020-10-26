@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://cdn.cs50.net/2020/summer/classes/8/scoreboard.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Hello</title>
+    <style>
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      
+      td {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <table>
+      <tbody><tr>
+        <td><input value="Team 1"></td>
+        <td><input value="Team 2"></td>
+      </tr>
+      <tr>
+        <td id="score1">0</td>
+        <td id="score2">0</td>
+      </tr>
+      <tr>
+        <td>
+          <button id="team1Point">+1</button>
+        </td>
+        <td>
+          <button id="team2Point">+1</button>
+        </td>
+      </tr>
+    </tbody></table>
+    
+    <script>
+      let team1 = 0;
+      let team2 = 0;
+      
+      document.querySelector('#team1Point').onclick = function() {
+        let score = document.querySelector('#score1');
+        team1 = team1 + 1;
+        score.innerHTML = team1;
+      }
+      
+      document.querySelector('#team2Point').onclick = function() {
+        let score = document.querySelector('#score2');
+        team2 = team2 + 1;
+        score.innerHTML = team2;
+      }
+      
+    </script>
+  
+</body></html>

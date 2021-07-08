@@ -11,9 +11,9 @@ node;
 int main(void)
 {
     node *list = NULL;
-    int n = get_int("How many numbers? ");
+    int count = get_int("How many numbers? ");
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < count; i++)
     {
         int x = get_int("Number: ");
 

@@ -11,19 +11,14 @@ node;
 int main(void)
 {
     node *list = NULL;
+    int n = get_int("How many numbers? ");
 
-    while (true)
+    for (int i = 0; i < n; i++)
     {
         int x = get_int("Number: ");
-        if (x == INT_MAX)
-        {
-            printf("\n");
-            break;
-        }
 
         // TODO: Allocate a new node.
         // TODO: Add new node to linked list.
-
     }
 
 	// TODO: Print all nodes.
